@@ -1,0 +1,3 @@
+name = Mymodule
+description = Enables webform to get the id of the node the block it is in is attached to.
+core = 7.x

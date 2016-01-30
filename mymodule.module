@@ -1,0 +1,9 @@
+<?php
+function mymodule_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'webform_client_form_249') {
+    if ($node = menu_get_object()) {
+      $form['submitted']['my_hidden_field']['#value'] = $node->title;
+    }
+  }
+}
+?>
